@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+/* line 2, ../scss/style.scss */
+body {
+  font-family: 'Roboto Mono', monospace;
+  overflow-x: hidden;
+}
+
+/* line 6, ../scss/style.scss */
+.fab {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 21px;
+  color: #fff;
+}
+
+/* line 11, ../scss/style.scss */
+.icon-moon {
+  font-size: 25px;
+  color: #fff;
+}
+
+/* line 15, ../scss/style.scss */
+.banner {
+  background: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 670px;
+}
+@media screen and (max-width: 992px) {
+  /* line 15, ../scss/style.scss */
+  .banner {
+    height: auto;
+  }
+}
+/* line 23, ../scss/style.scss */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  background-image: url("../images/7.jpg");
+  width: 169px;
+  height: 349px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* line 35, ../scss/style.scss */
+.banner .image::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  background-image: url("../images/51.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: .1;
+  z-index: 0;
+}
+/* line 49, ../scss/style.scss */
+.banner .carousel-control-prev {
+  font-size: 36px;
+  left: 78%;
+  top: 114px !important;
+}
+/* line 54, ../scss/style.scss */
+.banner .carousel-control-next {
+  font-size: 36px;
+  top: 114px;
+}
+/* line 58, ../scss/style.scss */
+.banner .hero-friends {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+/* line 62, ../scss/style.scss */
+.banner .hero-friends ul {
+  list-style: none;
+}
+/* line 64, ../scss/style.scss */
+.banner .hero-friends ul li {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60px;
+}
+@media screen and (max-width: 576px) {
+  /* line 64, ../scss/style.scss */
+  .banner .hero-friends ul li {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+/* line 75, ../scss/style.scss */
+.banner .hero-friends ul li:hover .character-hover {
+  display: block;
+  -webkit-animation: rotation 5s infinite linear;
+  position: absolute;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/* line 96, ../scss/style.scss */
+.banner .sidebar-left::before {
+  content: "";
+  border: 1px solid #fff;
+  position: absolute;
+  top: 87px;
+  left: 5px;
+  width: 18px;
+  z-index: 2;
+}
+/* line 105, ../scss/style.scss */
+.banner .sidebar-left::after {
+  content: "";
+  border: 1px solid #fff;
+  position: absolute;
+  top: 87px;
+  right: 4px;
+  width: 18px;
+  z-index: 2;
+}
+/* line 114, ../scss/style.scss */
+.banner .sidebar-left .inner-sidebar {
+  border: 2px solid #fff;
+  padding: 7px;
+}
+/* line 117, ../scss/style.scss */
+.banner .sidebar-left .inner-sidebar::after {
+  content: "";
+  border: 1px solid #8b9aaf;
+  position: absolute;
+  top: 76px;
+  right: -2px;
+  height: 20px;
+}
+/* line 125, ../scss/style.scss */
+.banner .sidebar-left .inner-sidebar::before {
+  content: "";
+  border: 1px solid #7c8ba5;
+  position: absolute;
+  top: 76px;
+  left: -2px;
+  height: 20px;
+}
+/* line 136, ../scss/style.scss */
+.banner .right-sidebar::before {
+  content: "";
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 59px;
+  left: 8px;
+  width: 18px;
+  z-index: 2;
+}
+/* line 145, ../scss/style.scss */
+.banner .right-sidebar::after {
+  content: "";
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 59px;
+  right: 8px;
+  width: 18px;
+  z-index: 2;
+}
+/* line 154, ../scss/style.scss */
+.banner .right-sidebar .countdown {
+  border: 2px solid #fff;
+  font-family: 'Titillium Web', cursive;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  padding-top: 20px;
+  padding-bottom: 3px;
+}
+/* line 163, ../scss/style.scss */
+.banner .right-sidebar .countdown::after {
+  content: "";
+  border: 1px solid #7c8ba5;
+  position: absolute;
+  top: 32px;
+  right: 15px;
+  height: 20px;
+}
+/* line 171, ../scss/style.scss */
+.banner .right-sidebar .countdown::before {
+  content: "";
+  border: 1px solid #8292ab;
+  position: absolute;
+  top: 32px;
+  left: 15px;
+  height: 20px;
+}
+/* line 179, ../scss/style.scss */
+.banner .right-sidebar .countdown div {
+  display: inline-table;
+  line-height: 1;
+}
+/* line 183, ../scss/style.scss */
+.banner .right-sidebar .countdown span {
+  display: block;
+  font-size: 10px;
+  color: white;
+}
+/* line 189, ../scss/style.scss */
+.banner .right-sidebar .countdown #days {
+  font-size: 20px;
+  color: #fff;
+}
+/* line 192, ../scss/style.scss */
+.banner .right-sidebar .countdown #days::after {
+  content: "";
+  border: 1px solid #fff;
+  position: relative;
+  top: -23px;
+  left: 26px;
+}
+/* line 200, ../scss/style.scss */
+.banner .right-sidebar .countdown #hours {
+  font-size: 20px;
+  color: #fff;
+}
+/* line 203, ../scss/style.scss */
+.banner .right-sidebar .countdown #hours::after {
+  content: "";
+  border: 1px solid #fff;
+  border: 1px solid #fff;
+  position: relative;
+  top: -23px;
+  left: 28px;
+}
+/* line 212, ../scss/style.scss */
+.banner .right-sidebar .countdown #minutes {
+  font-size: 20px;
+  color: #fff;
+}
+/* line 215, ../scss/style.scss */
+.banner .right-sidebar .countdown #minutes::after {
+  content: "";
+  border: 1px solid #fff;
+  border: 1px solid #fff;
+  position: relative;
+  top: -23px;
+  left: 30px;
+}
+/* line 224, ../scss/style.scss */
+.banner .right-sidebar .countdown #seconds {
+  font-size: 20px;
+  color: #fff;
+}
+/* line 230, ../scss/style.scss */
+.banner .right-sidebar .wrapper .button-wrapper {
+  color: #FFF;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  font-size: 13px;
+  margin-bottom: 140px;
+  background: url("../images/png1.png");
+  background-size: cover;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 9s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: rotate;
+  -moz-animation-duration: 9s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+/* line 264, ../scss/style.scss */
+.navbar-light .navbar-nav .nav-item a {
+  color: #fff;
+}
+/* line 266, ../scss/style.scss */
+.navbar-light .navbar-nav .nav-item a:hover {
+  color: #EF4C7F;
+}
+/* line 272, ../scss/style.scss */
+.navbar-light .navbar-nav p .nav-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+/* line 277, ../scss/style.scss */
+.navbar-light .navbar-nav p .nav-link:hover {
+  color: #fff;
+}
+
+/* line 284, ../scss/style.scss */
+.character-hover {
+  display: none;
+  position: absolute;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/* line 297, ../scss/style.scss */
+.character-hover1 {
+  -webkit-animation: rotation 5s infinite linear;
+  position: absolute;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
